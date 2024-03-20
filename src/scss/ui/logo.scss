@@ -1,0 +1,9 @@
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+
+    &_light{
+        color: var(--light);
+    }
+}
