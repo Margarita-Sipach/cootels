@@ -7,4 +7,9 @@
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0%;
+
+    @media (max-width: 650px) {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
 }
