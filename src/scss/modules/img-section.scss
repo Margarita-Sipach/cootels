@@ -1,9 +1,13 @@
 .img-section{
     display: flex;
     justify-content: space-between;
-    gap: 70px;
+    gap: 100px;
     position: relative;
     align-items: center;
+
+    @media (max-width: 1000px) {
+        gap: 60px;
+    }
 
     @media (max-width: 900px) {
         margin-bottom: 80px;
