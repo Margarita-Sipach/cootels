@@ -41,13 +41,13 @@
 
     &__text{
         max-width: 480px;
-        margin: 24px 0 32px;
+        margin-bottom: 32px;
 
         @media (max-width: 900px) {
             max-width: 100%;
         }
         @media (max-width: 650px) {
-            margin: 20px 0 28px;
+            margin-bottom: 28px;
         }
     }
 

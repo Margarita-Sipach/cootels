@@ -27,6 +27,11 @@ h1, h2{
     line-height: 150%;
     letter-spacing: -1%;
     font-family: var(--title);
+    margin-bottom: 24px;
+
+    @media (max-width: 650px) {
+        margin-bottom: 20px;
+    }
 }
 
 h1{
