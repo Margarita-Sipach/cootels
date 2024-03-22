@@ -1,0 +1,45 @@
+.footer{
+    background: var(--dark);
+    padding: 120px 0;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+    }
+    
+    &__logo{
+        margin-bottom: 13px;
+        display: block;
+    }
+
+    &__info{
+        max-width: 200px;
+        margin-bottom: 40px;
+    }
+
+    &__socials{
+        display: flex;
+        gap: 30px;
+    }
+
+    &__social{
+        font-size: 32px;
+        color: var(--light);
+    }
+
+    &__nav{
+        width: 50%;
+        justify-content: space-between;
+
+        @media (max-width: 900px) {
+            width: 100%;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+    }
+}

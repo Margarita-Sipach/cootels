@@ -1,12 +1,30 @@
 .nav{
     display: flex;
     gap: 32px;
+    color: var(--dark);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1%;
+
+    &_light .nav__title {
+        color: var(--light);
+    }
+
+    &_light .nav__item {
+        color: var(--grey);
+    }
+
+    &__column{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__title{
+        font-weight: 700;
+    }
 
     &__item{
-        color: var(--dark);
-        font-size: 16px;
         font-weight: 500;
-        line-height: 19px;
-        letter-spacing: 0%;
     }
 }
