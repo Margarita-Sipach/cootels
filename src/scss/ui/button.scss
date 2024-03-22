@@ -17,4 +17,9 @@
         background-color: var(--light);
         color: var(--dark);
     }
+
+    &_link{
+        padding: 0;
+        width: fit-content;
+    }
 }

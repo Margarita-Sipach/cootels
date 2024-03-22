@@ -1,0 +1,63 @@
+.room-types{
+    display: flex;
+    gap: calc(10% / 2);
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+
+        @media (max-width: 900px) {
+            width: 100%;
+            position: relative;
+            margin-bottom: 50px;
+        }
+    
+        @media (max-width: 650px) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__info{
+        @media (max-width: 900px) {
+            position: absolute;
+            z-index: 2;
+            background: var(--light);
+            margin: 0 40px;
+            padding: 30px;
+            border-radius: 10px;
+            bottom: -50px;
+        }
+        @media (max-width: 650px) {
+            margin: 0 10px;
+            padding: 20px;
+            bottom: -80px;
+        }
+    }
+
+    &__button{
+        position: relative;
+
+        &::after{
+            content: "➔";
+            position: absolute;
+            right: -25px;
+        }
+
+        &:hover::after{
+            right: -30px;
+        }
+    }
+
+    &__img{
+        display: block;
+        margin-bottom: 32px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
