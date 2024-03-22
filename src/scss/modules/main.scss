@@ -1,4 +1,10 @@
 .main{
+    padding-top: 200px;
+
+    @media (max-width: 900px) {
+        padding-top: calc(120px + 60px);
+    }
+
     &__info{
         max-width: 550px;
 

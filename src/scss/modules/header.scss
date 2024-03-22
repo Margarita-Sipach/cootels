@@ -1,6 +1,91 @@
-header{
+.header{
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background: var(--light);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 35px 0;
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        flex: 0 0 33.3%;
+    }
+
+    &__nav{
+        flex: 0 0 66.6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 900px) {
+            position: fixed;
+            height: calc(100vh - 120px);
+            width: 100vw;
+            background: var(--light);
+            flex-direction: column;
+            padding: 100px 80px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            top: -100%;
+            left: 0;
+            right: 0;
+            opacity: 0;
+
+            &>*{
+                font-size: 45px;
+                line-height: 120%;
+            }
+
+            &_active{
+                top: 120px;
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 576px) {
+            padding: 60px 30px;
+        }
+    }
+
+    &__button{
+        @media (max-width: 900px) {
+        margin-top: 50px;
+        }
+    }
+
+    &__burger{
+        display: none;
+        position: relative;
+
+        &, &::before, &::after{
+            content: '';
+            width: 20px;
+            height: 3px;
+            background-color: var(--dark);
+            cursor: pointer;
+
+            @media (max-width: 900px) {
+                display: block;
+            }
+        }
+
+        &::after, &::before{
+            position: absolute;
+        }
+
+        &::before{
+            top: 7px;
+        }
+
+        &::after{
+            bottom: 7px;
+        }
+    }
 }

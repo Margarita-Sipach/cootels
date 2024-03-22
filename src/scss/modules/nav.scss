@@ -20,6 +20,21 @@
         gap: 24px;
     }
 
+    &__cell{
+        display: flex;
+        gap: 32px;
+        width: 50%;
+
+        &:first-of-type{
+            justify-content: center;
+        }
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
     &__title{
         font-weight: 700;
     }
