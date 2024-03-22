@@ -22,7 +22,7 @@
 }
 
 
-h1, h2{
+h1, h2, h3{
     font-weight: 600;
     line-height: 150%;
     letter-spacing: -1%;
@@ -58,6 +58,16 @@ h2{
         font-size: 20px;
     }
 }
+
+h3{
+    font-size: 24px;
+    @media (max-width: 650px) {
+        font-size: 20px;
+    }
+    @media (max-width: 450px) {
+        font-size: 16px;
+    }
+}
   
 p{
     color: var(--grey);
@@ -81,4 +91,8 @@ section{
     @media (max-width: 900px) {
         padding: 60px 0; 
     }
+}
+
+.border{
+    border-radius: 4px;
 }
