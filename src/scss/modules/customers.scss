@@ -39,6 +39,7 @@
         border-radius: 100%;
         background: var(--orange);
         opacity: .3;
+        cursor: pointer;
 
         &_active{
             opacity: 1;

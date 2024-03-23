@@ -14,9 +14,16 @@
         padding: 10px 12px;
     }
 
+    &:hover{
+        background: var(--dark_active);
+    }
+
     &_light{
         background-color: var(--light);
         color: var(--dark);
+        &:hover{
+            background: none;
+        }
     }
 
     &_link{
