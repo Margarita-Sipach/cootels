@@ -1,4 +1,4 @@
-# VK test
+# Cootels
 ## About
 Landing page about Cootage Hotel.
 ## Stack
