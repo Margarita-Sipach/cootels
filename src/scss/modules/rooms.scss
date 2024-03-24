@@ -2,23 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     margin: 0 auto;
     gap: 80px;
 
     &__info{
         max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &>*{
-            text-align: center;
-        }
-    }
-
-    
-
-    &__text{
-        margin-bottom: 32px;
     }
 }

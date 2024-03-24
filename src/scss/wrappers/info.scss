@@ -1,0 +1,24 @@
+.info{    
+    background: var(--light);
+
+    &__text{
+        margin-bottom: 32px;
+
+        @media (max-width: 900px) {
+            max-width: 100%;
+        }
+        @media (max-width: 650px) {
+            margin-bottom: 28px;
+        }
+    }
+
+    &_center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &>*{
+            text-align: center;
+        }
+    }
+}
