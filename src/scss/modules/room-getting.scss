@@ -38,6 +38,7 @@
     }
 
     &__tabs{
+        width: 100%;
         max-width: 600px;
         @media (max-width: 900px) {
             max-width: none;

@@ -87,5 +87,21 @@
         &::after{
             bottom: 7px;
         }
+
+        &_active{
+            &::before{
+                top: 0px;
+                transform: rotate(45deg);
+            }
+    
+            &::after{
+                top: 0px;
+                transform: rotate(-45deg);
+            }
+
+            &{
+                background: var(--light);
+            }
+        }
     }
 }
